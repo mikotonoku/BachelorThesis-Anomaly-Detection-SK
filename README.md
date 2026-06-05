@@ -1,4 +1,6 @@
-# Detekcia anomálií pri nedostatku anomálnych dát
+# Bakalárska práca
+
+**Detekcia poruchových stavov pri nedostatku anomálnych dát pomocou metód strojového učenia**
 
 ## O projekte
 
