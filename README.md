@@ -61,6 +61,33 @@ Dataset elektrokardiografických záznamov. Trieda normálnych srdcových údero
 
 ---
 
+## Zdroje datasetov
+
+Použité datasety boli získané z verejne dostupných zdrojov:
+
+### ECG5000
+
+Dataset ECG5000 bol použitý na experimenty s detekciou anomálií v EKG signáloch.
+
+Zdroj:
+https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection
+
+### NASA Battery Dataset
+
+Dataset obsahuje merania lítiovo-iónových batérií počas nabíjacích a vybíjacích cyklov.
+
+Zdroj:
+https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset/data/code?select=cleaned_dataset
+
+### NAB (Numenta Anomaly Benchmark)
+
+Dataset časových radov obsahujúci priemyselné merania s označenými anomáliami.
+
+Zdroj:
+https://www.kaggle.com/datasets/boltzmannbrain/nab
+
+---
+
 ## Implementované metódy
 
 ### Isolation Forest
