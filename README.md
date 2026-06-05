@@ -1,154 +1,229 @@
-# Bakalárska práca
-
-**Detekcia poruchových stavov pri nedostatku anomálnych dát pomocou metód strojového učenia**
+# Detekcia anomálií pri nedostatku anomálnych dát
 
 ## O projekte
 
-Tento repozitár obsahuje implementáciu a experimentálne výsledky bakalárskej práce zameranej na detekciu poruchových stavov v podmienkach nedostatku anomálnych dát pomocou metód strojového učenia.
+Tento repozitár obsahuje zdrojové kódy a experimenty vytvorené v rámci bakalárskej práce zameranej na detekciu anomálií pomocou metód strojového učenia v podmienkach nedostatku anomálnych dát.
 
-Cieľom práce bolo analyzovať a porovnať schopnosť vybraných algoritmov identifikovať anomálie v situáciách, keď sú počas trénovania dostupné prevažne normálne dáta a iba obmedzené množstvo anomálnych vzoriek.
-
-V práci boli implementované a porovnané nasledujúce metódy:
+Cieľom práce bolo analyzovať a porovnať vlastnosti troch metód detekcie anomálií:
 
 * Isolation Forest
 * One-Class Support Vector Machine (One-Class SVM)
 * Autoencoder
 
-Experimenty boli realizované na troch verejne dostupných datasetoch:
+Experimenty boli realizované na troch datasetoch reprezentujúcich rôzne typy dát:
 
-* NASA Battery Dataset
-* NAB (Numenta Anomaly Benchmark)
-* ECG5000
+* NAB (Numenta Anomaly Benchmark) – priemyselné časové rady,
+* ECG5000 – biomedicínske EKG signály,
+* NASA Battery Dataset – degradačné dáta lítiovo-iónových batérií.
+
+Všetky modely boli trénované výlučne na normálnych dátach a anomálne vzorky boli použité iba počas testovania.
 
 ---
 
-## Štruktúra repozitára
+# Štruktúra repozitára
 
 ```text
-.
-├── notebooks/
-│   ├── Isolation_Forest_NASA.ipynb
-│   ├── Isolation_Forest_NAB.ipynb
-│   ├── Isolation_Forest_ECG5000.ipynb
-│   ├── OneClass_SVM_NASA.ipynb
-│   ├── OneClass_SVM_NAB.ipynb
-│   ├── OneClass_SVM_ECG5000.ipynb
-│   ├── Autoencoder_NASA.ipynb
-│   ├── Autoencoder_NAB.ipynb
-│   └── Autoencoder_ECG5000.ipynb
+BachelorThesis-Anomaly-Detection-SK
+│
+├── Autoencoder_ECG5000.ipynb
+├── Autoencoder_NAB.ipynb
+├── Autoencoder_NASA.ipynb
+│
+├── Isolation_Forest_ECG5000.ipynb
+├── Isolation_Forest_NAB.ipynb
+├── Isolation_Forest_NASA.ipynb
+│
+├── OneClass_SVM_ECG5000.ipynb
+├── OneClass_SVM_NAB.ipynb
+├── OneClass_SVM_NASA.ipynb
+│
+├── nab.ipynb
+├── nasa_battery.ipynb
 │
 ├── data_raw/
 ├── data_processed/
-├── results/
+│
 └── README.md
 ```
 
 ---
 
-## Použité datasety
+# Popis jednotlivých súborov
 
-### NASA Battery Dataset
+### Predspracovanie dát
 
-Dataset obsahuje merania získané počas vybíjacích cyklov lítiovo-iónových batérií. Anomálie boli určené na základe poklesu kapacity batérie pod stanovenú hranicu.
+**nab.ipynb**
 
-### NAB (Numenta Anomaly Benchmark)
+Notebook určený na predspracovanie datasetu NAB. Vykonáva načítanie dát, vytvorenie odvodených príznakov, označenie anomálií a vytvorenie výsledného datasetu použitého pri experimentoch.
 
-Dataset časových radov obsahujúci merania teploty priemyselného zariadenia spolu s označenými intervalmi výskytu anomálií.
+**nasa_battery.ipynb**
 
-### ECG5000
+Notebook určený na predspracovanie datasetu NASA Battery. Vytvára odvodené príznaky z vybíjacích cyklov batérií a generuje výsledný súbor:
 
-Dataset elektrokardiografických záznamov. Trieda normálnych srdcových úderov bola použitá ako normálna trieda, zatiaľ čo ostatné triedy boli považované za anomálie.
+```text
+data_processed/nasa_battery_features_rolling.csv
+```
+
+Tento súbor je následne využívaný všetkými experimentmi realizovanými na datasete NASA Battery.
+
+### Experimenty
+
+Pre každý dataset boli implementované tri metódy:
+
+#### Isolation Forest
+
+* Isolation_Forest_NAB.ipynb
+* Isolation_Forest_ECG5000.ipynb
+* Isolation_Forest_NASA.ipynb
+
+#### One-Class SVM
+
+* OneClass_SVM_NAB.ipynb
+* OneClass_SVM_ECG5000.ipynb
+* OneClass_SVM_NASA.ipynb
+
+#### Autoencoder
+
+* Autoencoder_NAB.ipynb
+* Autoencoder_ECG5000.ipynb
+* Autoencoder_NASA.ipynb
+
+Každý notebook obsahuje kompletný experiment vrátane načítania dát, trénovania modelu, vyhodnotenia metrík, vytvorenia konfúznych matíc a grafických výstupov.
 
 ---
 
-## Zdroje datasetov
+# Použité datasety
 
-Použité datasety boli získané z verejne dostupných zdrojov:
-
-### ECG5000
-
-Dataset ECG5000 bol použitý na experimenty s detekciou anomálií v EKG signáloch.
-
-Zdroj:
-https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection
-
-### NASA Battery Dataset
+## NASA Battery Dataset
 
 Dataset obsahuje merania lítiovo-iónových batérií počas nabíjacích a vybíjacích cyklov.
 
 Zdroj:
+
 https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset/data/code?select=cleaned_dataset
 
-### NAB (Numenta Anomaly Benchmark)
+---
 
-Dataset časových radov obsahujúci priemyselné merania s označenými anomáliami.
+## NAB (Numenta Anomaly Benchmark)
+
+Dataset priemyselných časových radov s označenými anomáliami.
 
 Zdroj:
+
 https://www.kaggle.com/datasets/boltzmannbrain/nab
 
 ---
 
-## Implementované metódy
+## ECG5000
 
-### Isolation Forest
+Dataset elektrokardiografických záznamov využívaný pri detekcii anomálií v EKG signáloch.
 
-Metóda založená na náhodnej izolácii dátových vzoriek pomocou binárnych stromov. Vzorky, ktoré sa izolujú rýchlejšie, sú považované za anomálne.
+Zdroj:
 
-### One-Class SVM
-
-Metóda vytvára rozhodovaciu hranicu okolo normálnych dát a vzorky nachádzajúce sa mimo tejto hranice klasifikuje ako anomálie.
-
-### Autoencoder
-
-Neurónová sieť trénovaná na rekonštrukciu normálnych dát. Anomálie sú identifikované na základe veľkosti rekonštrukčnej chyby.
+https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection
 
 ---
 
-## Experimentálna metodika
+# Inštalácia
 
-Všetky modely boli trénované výhradne na normálnych dátach.
+Projekt bol vytvorený v prostredí:
 
-Vyhodnotenie bolo realizované na testovacích množinách obsahujúcich normálne aj anomálne vzorky.
+* Python 3.x
+* Jupyter Notebook
+* Anaconda
 
-Počas experimentov boli skúmané:
-
-* rôzne pomery rozdelenia dát,
-* rôzne rozhodovacie prahy (threshold),
-* viacero náhodných inicializácií (seed),
-* priemerné výsledky z piatich nezávislých behov.
-
-Výkonnosť modelov bola hodnotená pomocou metrík:
-
-* Accuracy,
-* Precision,
-* Recall,
-* F1-score.
-
-Súčasťou analýzy boli aj konfúzne matice a histogramy skóre anomálnosti.
+Odporúča sa vytvoriť samostatné virtuálne prostredie.
 
 ---
 
-## Použité technológie
+# Použité knižnice
 
-Projekt bol implementovaný v jazyku Python s využitím prostredia Jupyter Notebook.
+Pri implementácii boli použité najmä tieto knižnice:
 
-Použité knižnice:
-
-* NumPy
-* Pandas
-* Scikit-learn
-* TensorFlow / Keras
-* Matplotlib
-* Seaborn
+* pandas
+* numpy
+* scikit-learn
+* tensorflow
+* keras
+* matplotlib
+* seaborn
+* scipy
+* pathlib
 
 ---
 
-## Autor
+# Postup spustenia
+
+## Dataset NASA Battery
+
+1. Stiahnite pôvodný dataset NASA Battery.
+2. Umiestnite dáta do adresára `data_raw`.
+3. Spustite notebook:
+
+```text
+nasa_battery.ipynb
+```
+
+4. Notebook automaticky vytvorí súbor:
+
+```text
+data_processed/nasa_battery_features_rolling.csv
+```
+
+5. Následne je možné spúšťať experimenty:
+
+```text
+Isolation_Forest_NASA.ipynb
+OneClass_SVM_NASA.ipynb
+Autoencoder_NASA.ipynb
+```
+
+## Dataset NAB
+
+1. Stiahnite dataset NAB.
+2. Spustite notebook:
+
+```text
+nab.ipynb
+```
+
+3. Po vytvorení predspracovaných dát je možné spustiť experimentálne notebooky.
+
+## Dataset ECG5000
+
+Dataset sa načítava priamo v experimentoch:
+
+```text
+Isolation_Forest_ECG5000.ipynb
+OneClass_SVM_ECG5000.ipynb
+Autoencoder_ECG5000.ipynb
+```
+
+---
+
+# Hodnotenie modelov
+
+Výsledky experimentov boli hodnotené pomocou metrík:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+
+Súčasťou analýzy boli aj:
+
+* konfúzne matice,
+* histogramy skóre anomálnosti,
+* histogramy rekonštrukčnej chyby (Autoencoder).
+
+---
+
+# Autor
 
 **Ievgeniia Ievgrafova**
-
-Bakalárska práca
 
 Fakulta elektrotechniky a informatiky
 
 Slovenská technická univerzita v Bratislave
+
+Bakalárska práca
