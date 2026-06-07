@@ -54,6 +54,10 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
 
+<p align="right">
+<a href="#-obsah">⬆️ Späť na obsah</a>
+</p>
+
 # 🔗 Užitočné odkazy
 
 ## Vývojové prostredie
@@ -122,6 +126,10 @@ BachelorThesis-Anomaly-Detection-SK
 │
 └── README.md
 ```
+
+<p align="right">
+<a href="#-obsah">⬆️ Späť na obsah</a>
+</p>
 
 ---
 
