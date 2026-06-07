@@ -42,7 +42,7 @@ Vo všetkých experimentoch boli modely trénované výlučne na normálnych dá
 * 📈 [Ukážka výstupov experimentu](#-ukážka-výstupov-experimentu)
 * 💻 [Inštalácia](#-inštalácia)
 * ▶️ [Spustenie projektu](#️-spustenie-projektu)
-* 👩‍🎓 [Autor](#-autor)
+* 👩‍🎓 [Autor](#autor)
 
 ---
 
@@ -448,6 +448,8 @@ Experimentálne notebooky načítavajú dataset priamo.
 </p>
 
 ---
+
+<a id="autor"></a>
 
 # 👩‍🎓 Autor
 
