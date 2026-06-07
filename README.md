@@ -352,10 +352,6 @@ Graf rekonštrukcie EKG signálov ukazuje schopnosť Autoencodera presnejšie re
 <a href="#-obsah">⬆️ Späť na obsah</a>
 </p>
 
-<p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
-</p>
-
 ---
 
 # 💻 Inštalácia
