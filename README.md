@@ -31,7 +31,7 @@ Vo všetkých experimentoch boli modely trénované výlučne na normálnych dá
 
 Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie datasetov, implementácia metód a analýza výsledkov sú uvedené v bakalárskej práci.
 
-PDF verzia práce je dostupná tu:
+📄 **Bakalárska práca (PDF):**
 
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
 ```
