@@ -84,10 +84,13 @@ BachelorThesis-Anomaly-Detection-SK
 ├── data_raw/
 │   │
 │   ├── ECG5000/
-│   ├── NAB/
+│   ├── nab/
 │   └── nasa_battery/
 │
 ├── data_processed/
+│   │
+│   ├── NAB/
+│   └── NASA/
 │
 ├── docs/
 │   │
