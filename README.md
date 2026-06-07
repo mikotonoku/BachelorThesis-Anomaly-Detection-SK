@@ -26,7 +26,6 @@ Vo všetkých experimentoch boli modely trénované výlučne na normálnych dá
 
 ---
 
-```md
 # Bakalárska práca
 
 Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie datasetov, implementácia metód a analýza výsledkov sú uvedené v bakalárskej práci.
@@ -34,9 +33,7 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 📄 **Bakalárska práca (PDF):**
 
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
-```
 
-```md
 # Užitočné odkazy
 
 ## Vývojové prostredie
@@ -59,7 +56,6 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 * [NASA Battery Dataset](https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset)
 * [NAB Dataset](https://www.kaggle.com/datasets/boltzmannbrain/nab)
 * [ECG5000 Dataset](https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection)
-```
 
 ---
 
