@@ -89,7 +89,9 @@ BachelorThesis-Anomaly-Detection-SK
 │
 ├── data_processed/
 │
-├── results/
+├── docs/
+│   │
+│   └── BP_RK_IevgeniiaIevgrafova.pdf
 │
 └── README.md
 ```
