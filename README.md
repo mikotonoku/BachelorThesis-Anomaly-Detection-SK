@@ -452,6 +452,7 @@ Experimentálne notebooky načítavajú dataset priamo.
 Bakalárska práca
 
 Fakulta elektrotechniky a informatiky
+
 Slovenská technická univerzita v Bratislave
 
 2026
