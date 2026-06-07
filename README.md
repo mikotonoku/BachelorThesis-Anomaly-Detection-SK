@@ -26,6 +26,43 @@ Vo všetkých experimentoch boli modely trénované výlučne na normálnych dá
 
 ---
 
+```md
+# Bakalárska práca
+
+Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie datasetov, implementácia metód a analýza výsledkov sú uvedené v bakalárskej práci.
+
+PDF verzia práce je dostupná tu:
+
+[BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
+```
+
+```md
+# Užitočné odkazy
+
+## Vývojové prostredie
+
+* [Anaconda](https://www.anaconda.com/download) – distribúcia Pythonu vhodná pre dátovú analýzu a strojové učenie.
+* [Jupyter Notebook](https://jupyter.org/install) – prostredie na spúšťanie experimentálnych notebookov.
+* [Python](https://www.python.org/downloads/) – programovací jazyk použitý pri implementácii.
+
+## Použité knižnice
+
+* [pandas](https://pandas.pydata.org/) – práca s tabuľkovými dátami.
+* [NumPy](https://numpy.org/) – numerické výpočty.
+* [scikit-learn](https://scikit-learn.org/stable/) – implementácia metód Isolation Forest a One-Class SVM.
+* [TensorFlow](https://www.tensorflow.org/install) – implementácia neurónových sietí.
+* [Keras](https://keras.io/) – tvorba a trénovanie Autoencoder modelov.
+* [Matplotlib](https://matplotlib.org/) – vizualizácia výsledkov.
+
+## Datasety
+
+* [NASA Battery Dataset](https://www.kaggle.com/datasets/patrickfleith/nasa-battery-dataset)
+* [NAB Dataset](https://www.kaggle.com/datasets/boltzmannbrain/nab)
+* [ECG5000 Dataset](https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection)
+```
+
+---
+
 # Štruktúra repozitára
 
 ```text
