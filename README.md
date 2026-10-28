@@ -55,7 +55,7 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 # 🔗 Užitočné odkazy
@@ -82,7 +82,7 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 * [ECG5000 Dataset](https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection)
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -128,7 +128,7 @@ BachelorThesis-Anomaly-Detection-SK
 ```
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -189,7 +189,7 @@ Pri experimentoch:
 * bola použitá Z-normalizácia založená na trénovacích dátach.
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -252,7 +252,7 @@ Implementácia využíva RBF kernel a klasifikáciu na základe decision score.
 Autoencoder využíva neurónovú sieť implementovanú pomocou TensorFlow/Keras. Detekcia anomálií je založená na rekonštrukčnej chybe.
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -301,7 +301,7 @@ Vo všetkých experimentoch s metódou Autoencoder bola použitá rovnaká zákl
 * pri NASA Battery boli použité seeds = [42, 43, 44, 45, 46]
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -323,7 +323,7 @@ Nasledujúca tabuľka sumarizuje najlepšie konfigurácie a výsledky dosiahnut�
 | AE | NAB | 0.00006 | 0.80 | 95.85 | 80.22 | 88.71 | 84.25 |
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -357,7 +357,7 @@ Na histograme rekonštrukčnej chyby je možné pozorovať oddelenie normálnych
 Graf rekonštrukcie EKG signálov ukazuje schopnosť Autoencodera presnejšie rekonštruovať normálne vzorky, zatiaľ čo pri anomálnych vzorkách vzniká výraznejšia rekonštrukčná chyba.
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -383,7 +383,7 @@ Použité knižnice:
 * pathlib
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
@@ -444,7 +444,7 @@ Nie je potrebné vykonávať samostatné predspracovanie.
 Experimentálne notebooky načítavajú dataset priamo.
 
 <p align="right">
-<a href="#-obsah">⬆️ Späť na obsah</a>
+<a href="#-obsah">Späť na obsah</a>
 </p>
 
 ---
