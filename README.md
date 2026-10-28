@@ -26,31 +26,31 @@ Vo všetkých experimentoch boli modely trénované výlučne na normálnych dá
 
 ---
 
-## 📑 Obsah
+## Obsah
 
-* 📘 [Bakalárska práca](#-bakalárska-práca)
-* 🔗 [Užitočné odkazy](#-užitočné-odkazy)
-* 📂 [Štruktúra repozitára](#-štruktúra-repozitára)
-* 📊 [Popis datasetov](#-popis-datasetov)
+* [Bakalárska práca](#bakalárska-práca)
+* [Užitočné odkazy](#užitočné-odkazy)
+* [Štruktúra repozitára](#štruktúra-repozitára)
+* [Popis datasetov](#popis-datasetov)
 
-  * 🔋 [NASA Battery Dataset](#-nasa-battery-dataset)
-  * 🏭 [NAB (Numenta Anomaly Benchmark)](#-nab-numenta-anomaly-benchmark)
-  * ❤️ [ECG5000](#️-ecg5000)
-* 📓 [Popis notebookov](#-popis-notebookov)
-* ⚙️ [Spoločné nastavenia experimentov](#️-spoločné-nastavenia-experimentov)
-* 🏆 [Najlepšie výsledky](#-najlepšie-výsledky)
-* 📈 [Ukážka výstupov experimentu](#-ukážka-výstupov-experimentu)
-* 💻 [Inštalácia](#-inštalácia)
-* ▶️ [Spustenie projektu](#️-spustenie-projektu)
-* 👩‍🎓 [Autor](#autor)
+  * [NASA Battery Dataset](#nasa-battery-dataset)
+  * [NAB (Numenta Anomaly Benchmark)](#nab-numenta-anomaly-benchmark)
+  * [ECG5000](#️ecg5000)
+* [Popis notebookov](#popis-notebookov)
+* [Spoločné nastavenia experimentov](#️spoločné-nastavenia-experimentov)
+* [Najlepšie výsledky](#najlepšie-výsledky)
+* [Ukážka výstupov experimentu](#ukážka-výstupov-experimentu)
+* [Inštalácia](#inštalácia)
+* [Spustenie projektu](#️spustenie-projektu)
+* [Autor](#autor)
 
 ---
 
-# 📘 Bakalárska práca
+# Bakalárska práca
 
 Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie datasetov, implementácia metód a analýza výsledkov sú uvedené v bakalárskej práci.
 
-📄 **Bakalárska práca (PDF):**
+**Bakalárska práca (PDF):**
 
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
 
@@ -58,7 +58,7 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 <a href="#-obsah">Späť na obsah</a>
 </p>
 
-# 🔗 Užitočné odkazy
+# Užitočné odkazy
 
 ## Vývojové prostredie
 
@@ -87,7 +87,7 @@ Podrobnejší teoretický opis problematiky, návrh riešenia, predspracovanie d
 
 ---
 
-# 📂 Štruktúra repozitára
+# Štruktúra repozitára
 
 ```text
 BachelorThesis-Anomaly-Detection-SK
@@ -133,9 +133,9 @@ BachelorThesis-Anomaly-Detection-SK
 
 ---
 
-# 📊 Popis datasetov
+# Popis datasetov
 
-## 🔋 NASA Battery Dataset
+## NASA Battery Dataset
 
 Dataset obsahuje merania lítiovo-iónových batérií počas ich životného cyklu.
 
@@ -159,7 +159,7 @@ Okrem pôvodných veličín boli vytvorené:
 
 Anomálne cykly boli identifikované na základe kapacity batérie. Cykly s kapacitou nižšou ako 20. percentil boli označené ako anomálne.
 
-## 🏭 NAB (Numenta Anomaly Benchmark)
+## NAB (Numenta Anomaly Benchmark)
 
 Dataset NAB predstavuje priemyselný časový rad obsahujúci merania teploty priemyselného zariadenia.
 
@@ -174,7 +174,7 @@ Počas predspracovania boli vytvorené odvodené príznaky:
 
 Anomálie boli označené podľa oficiálnych intervalov definovaných v datasete NAB.
 
-## ❤️ ECG5000
+## ECG5000
 
 Dataset ECG5000 obsahuje elektrokardiografické záznamy pozostávajúce zo 140 bodov reprezentujúcich jeden srdcový cyklus.
 
@@ -194,7 +194,7 @@ Pri experimentoch:
 
 ---
 
-# 📓 Popis notebookov
+# Popis notebookov
 
 ## Predspracovanie dát
 
@@ -257,7 +257,7 @@ Autoencoder využíva neurónovú sieť implementovanú pomocou TensorFlow/Keras
 
 ---
 
-# ⚙️ Spoločné nastavenia experimentov
+# Spoločné nastavenia experimentov
 
 Vo všetkých experimentoch boli použité nasledovné princípy:
 
@@ -306,7 +306,7 @@ Vo všetkých experimentoch s metódou Autoencoder bola použitá rovnaká zákl
 
 ---
 
-# 🏆 Najlepšie výsledky
+# Najlepšie výsledky
 
 Nasledujúca tabuľka sumarizuje najlepšie konfigurácie a výsledky dosiahnuté jednotlivými metódami.
 
@@ -328,7 +328,7 @@ Nasledujúca tabuľka sumarizuje najlepšie konfigurácie a výsledky dosiahnut�
 
 ---
 
-# 📈 Ukážka výstupov experimentu
+# Ukážka výstupov experimentu
 
 Ako reprezentatívny príklad je uvedený Autoencoder na datasete ECG5000 s rozhodovacím prahom:
 
@@ -362,7 +362,7 @@ Graf rekonštrukcie EKG signálov ukazuje schopnosť Autoencodera presnejšie re
 
 ---
 
-# 💻 Inštalácia
+# Inštalácia
 
 Projekt bol vytvorený v prostredí:
 
@@ -388,7 +388,7 @@ Použité knižnice:
 
 ---
 
-# ▶️ Spustenie projektu
+# Spustenie projektu
 
 ## NASA Battery
 
@@ -451,7 +451,7 @@ Experimentálne notebooky načítavajú dataset priamo.
 
 <a id="autor"></a>
 
-# 👩‍🎓 Autor
+# Autor
 
 **Ievgeniia Ievgrafova**
 
